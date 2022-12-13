@@ -1,0 +1,15 @@
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: ballot
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  path: ./ballot/ballot.yaml
+  prune: false
+  sourceRef:
+    kind: ""
+    name: ""
+  targetNamespace: flux-test-on-demand-bhavika-baid-2588
+

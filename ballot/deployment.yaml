@@ -19,7 +19,3 @@ spec:
         image: local-registry:5002/ballot:latest
         ports:
         - containerPort: 8080
-      resources:
-        requests:
-          cpu: "1"
-            memory: "1Gi"
